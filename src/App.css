@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.phone-tile {
+  width: 200px;
+  height: 100px;
+  background: #b65b3a;
+  color: #282c34;
+}
