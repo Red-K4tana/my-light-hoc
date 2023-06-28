@@ -1,12 +1,30 @@
 import React from 'react';
 import PhoneTile from "./phone-tile";
+import {WithPhoneList} from "../hocs/showHOC";
 
 
-export const PhoneList = ( {show, showController, phoneData} ) => {
+
+
+function PhoneList( {show, showController, phoneData} ) {
+/*
+  const [count, setCount] = useState(0)
+  const effect = () => {
+    console.log(' effect !!!')
+  }
+  useEffect(() => {
+    effect()
+    return () => {
+      setCount(0)
+      console.log(count)
+    }
+  }, [count === 5])
+*/
 
   return (
     <div className={'sale-zone'} >
       <p className={'title-sale-zone'}>My shop</p>
+      {/*<button onClick={()=>setCount(count + 1)}>Count + </button>
+      <p>{count}</p>*/}
       <button onClick={showController}>HIDE</button>
       {show &&
         <div className={'phone-list'}>
@@ -20,3 +38,6 @@ export const PhoneList = ( {show, showController, phoneData} ) => {
     </div>
   );
 };
+
+
+export default WithPhoneList(PhoneList)

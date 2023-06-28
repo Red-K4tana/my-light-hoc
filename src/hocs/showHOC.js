@@ -1,10 +1,11 @@
 import { useState } from "react";
 
 
-export const WithPhoneList = (Component) => {
+export function WithPhoneList (Component) {
 
   return (props) => {
-		const {phoneData, ...otherProps} = props
+		const {phoneData} = props
+	  // eslint-disable-next-line react-hooks/rules-of-hooks
 	  const [show, setShow] = useState(true)
 	  const showController = () => {
 			setShow(!show)
@@ -16,7 +17,7 @@ export const WithPhoneList = (Component) => {
 				show={show}
 				showController={showController}
 				phoneData={phoneData}
-				{...otherProps}
+
 			/>
 		)
 	}
