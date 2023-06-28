@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import PhoneTile from "./components/phone-tile";
-import PhoneList from "./components/phone-list";
+import {phones} from "./data";
+import {PhoneList} from "./components/PhoneList";
 
 function App() {
 
   return (
     <div className="App">
-      <PhoneList />
+      <PhoneList phoneData={phones}/>
     </div>
   );
 }

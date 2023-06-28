@@ -1,66 +1,86 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
+
 .sale-zone {
-  display: flex;
-  flex-direction: column;
-  width: 620px;
-  background: #515969;
-  margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 600px;
+    background: #515969;
+    margin: 30px;
 }
-.phone-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 600px;
-  height: 400px;
-  padding: 10px;
+.sale-zone button {
+    margin: 5px;
 }
+
 .title-sale-zone {
-  color: coral;
-  font-size: 30px;
-  font-weight: bold;
+    color: coral;
+    font-size: 30px;
+    font-weight: bold;
 }
+
+.phone-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 410px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #61dafb;
+}
+
 .phone-tile {
-  display: flex;
-  width: 500px;
-  height: 100px;
-  background: #b65b3a;
-  color: #282c34;
-  padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background: #b65b3a;
+    color: #282c34;
+    padding: 10px;
+}
+
+.phone-tile p {
+    height: 10px;
+    margin: 10px;
+}
+
+.phone-tile :nth-child(1) {
+    font-weight: bold;
+    color: #515969;
 }
